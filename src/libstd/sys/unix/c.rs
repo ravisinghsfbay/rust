@@ -202,7 +202,7 @@ mod signal_os {
     // support it. Android for AArch64 technically has a structure of a
     // single ulong.
     #[cfg(target_os = "android")]
-    pub type sigset_t = libc::ulong;
+    pub type sigset_t = libc::c_ulong;
 
     #[cfg(any(target_arch = "x86",
               target_arch = "x86_64",
