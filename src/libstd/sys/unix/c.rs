@@ -21,6 +21,7 @@
 // being 1024 bits on all platforms. If you're adding a new GNU/Linux
 // port, check glibc's sysdeps/unix/sysv/linux, not the kernel headers.
 
+#![allow(dead_code)]
 #![allow(non_camel_case_types)]
 
 pub use self::signal_os::{sigaction, siginfo, sigset_t, sigaltstack};
